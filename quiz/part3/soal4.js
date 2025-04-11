@@ -4,8 +4,19 @@
 // Apabila bukan kelipatan yang ditentukan tidak perlu menuliskan apa-apa
 // Apabila angka counter adalah kelipatan 3 dengan pertambahan 2, kelipatan 6 dengan pertambahan 5, dan kelipatan 10 dengan pertambahan 9, tuliskan:
 // "3 kelipatan 3"dan seterusnya.
-let i = 1;
-while (i < 5) {
-  console.log(i);
-  i++;
+for (let i = 1; i <= 100; i++) {
+  if (i % 2 === 0) {
+    console.log(i + " kelipatan 2");
+  }
 }
+for (let i = 1; i <= 100; i++) {
+  if (i % 5 === 0) {
+    console.log(i + " kelipatan 5");
+  }
+}
+for (let i = 1; i <= 100; i++) {
+  if (i % 9 === 0) {
+    console.log(i + " kelipatan 9");
+  }
+}
+console.log("3 kelipatan 3");
