@@ -18,7 +18,23 @@
 // algoritma
 //isi algoritma mu disini (AWAS KALO GA DI ISI!!!!)
 
-let nama = "",
-  peran = "";
+let nama = "Niel",
+  peran = "Ksatria";
 
 //code disini gunakan console.log untuk outputnya
+if (nama === "") {
+  console.log("Nama wajib diisi!");
+} else if (peran === "") {
+  console.log("Pilih peranmu untuk memulai game!");
+} else {
+  console.log(`Selamat datang di dunia Proxytia, ${nama}`);
+}
+if (peran === "Ksatria") {
+  console.log(`Halo Ksatria ${nama}, kamu dapat menyerang dengan senjatamu!`);
+} else if (peran === "Tabib") {
+  console.log(`Halo Tabib ${nama}, kamu akan membantu temanmu yang terluka.`);
+} else if (peran === "Penyihir") {
+  console.log(`Halo Penyihir ${nama}, ciptakan keajaiban yang membantu kemenanganmu!`);
+} else {
+  console.log("Peran tidak dikenali.");
+}
