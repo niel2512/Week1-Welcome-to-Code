@@ -5,8 +5,12 @@
 //tampilkan output yang menunjukan kalau looping itu maju pada looping pertama dan mundur pada looping kedua
 let counter = 0;
 while (counter < 20) {
-  counter += 2;
+  counter += 1;
   console.log("LOOPING PERTAMA " + counter);
-  counter -= 2;
+  counter++;
+}
+while (counter > 0) {
+  counter -= 1;
   console.log("LOOPING KEDUA " + counter);
+  counter--;
 }
